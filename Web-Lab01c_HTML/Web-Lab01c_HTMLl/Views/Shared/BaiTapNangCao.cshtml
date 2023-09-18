@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Bài Tập Nâng Cao</title>
+</head>
+<body>
+    <table border="1" style="text-align: center;">
+        <tr>
+            <th colspan="5">Nhập thông tin sinh viên</th>
+        </tr>
+        <tr>
+            <td rowspan="3"><img src="https://i.imgur.com/ZaZyoZX.png"> </td>
+            <td width="100">Họ và tên</td>
+            <td colspan="2"><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>MSSV</td>
+            <td colspan="2"><input type="text" name="MSSV"></td>
+        </tr>
+        <tr>
+            <td>Ngày sinh</td>
+            <td colspan="2"><input type="date" name="NS"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Chuyên ngành: </td>
+            <td colspan="2">
+                <input type="radio" name="CN"> CNPM
+                <input type="radio" name="CN"> HTTT
+                <input type="radio" name="CN"> AN NINH MẠNG
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Sở thích: </td>
+            <td colspan="2">
+                <input type="Checkbox" name="hobby"> VIẾT CHƯƠNG TRÌNH <br>
+                <input type="Checkbox" name="hobby"> PHÂN TÍCH CSDL <br>
+                <input type="Checkbox" name="hobby"> XÂY DỰNG ĐỒ ÁN MẠNG <br>
+            </td>
+        </tr>
+        <tr>
+            <td>Màu sắc yêu thích</td>
+            <td><input type="color" id="colorPicker" name="colorPicker"></td>
+            <td>Hình đại diện</td>
+            <td><input type="file" id="file" name="file"></td>
+        </tr>
+        <tr>
+            <td>Tên đăng nhập: </td>
+            <td><input type="text" name="LOGIN"></td>
+            <td>Mật khẩu</td>
+            <td><input type="password" name="password"></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit"> Gửi dữ liệu về máy chủ </button></td>
+        </tr>
+    </table>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BT4-b</title>
+    <style>
+        .left-body {
+            float: left;
+            width: 400px;
+        }
+
+        .right-body {
+            float: left;
+            width: 700px;
+        }
+
+        .detail {
+            margin-top: 70px;
+        }
+
+            .detail a {
+                border: 2px solid #333;
+                border-radius: 4px;
+                padding: 5px 15px 5px;
+                text-decoration: none;
+                color: black;
+            }
+
+        #uppercase {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-body">
+        <img src="https://i.imgur.com/th1wQ7f.png">
+    </div>
+    <div class="right-body">
+        <h1 id="uppercase"> Vestibulum ullamcorper ut leo quis</h1>
+        <p>
+            Aenean facilisis lectus ante, ut rutrum eros convallis et.
+            Vestibulum ullamcorper ut leo quis tristique. Donec in erat commodo, pharetra purus ac,consectetur lacus. Suspendisse odio sapien, egestas at ex sit amet, molestie sagittis est.
+        </p>
+        <br>
+        <p>In id purus imperdiet nisl accumsan scelerisque. Donec nec justo sed enim dapibus rhoncus. Morbi sed elit vitae metus ullamcorper efficitur.</p>
+        <br>
+        <p>Fusce aliquam magna id ipsum ultricies interdum. Maecenas nibh risus.</p>
+        <div class="detail">
+            <a href=".">DETAIL</a>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
